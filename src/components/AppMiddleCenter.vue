@@ -72,6 +72,27 @@
             </div>
         </div>
     </section>
+
+    <section class="client-boost">
+        <div class="container">
+            <div class="top-section">
+                <div class="text-part">
+                <div class="text">
+                    <h1>We Boost Our Clients’ Bottom Line by Optimizing Their Growth Potential.</h1>
+                    <p>Quisque aliquet, libero consequat elementum convallis, erat risus imperdiet pellentesque sem neque eget.</p>
+                    <button class="orange">Why Work With Us</button>
+                </div>
+            </div>
+
+                <div class="image-part">
+                    <img src="../assets/img/we-boost-our-clients.jpg" alt="We boost our clients">
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </section>
 </template>
 
 <script>
@@ -149,6 +170,7 @@ export default {
     }
 
     section.trusted{
+        padding-bottom: 7rem;
         div.title{
             h1{
                 text-align: center;
@@ -184,6 +206,40 @@ export default {
             @include flex();
             button.orange{
                 margin: 4rem 0;
+            }
+        }
+    }
+
+    section.client-boost{
+
+        // aggiungere linear gradient
+        margin-top: 7rem;
+        div.container{
+            div.top-section{
+                @include flex(row, normal, normal);
+
+                div.text-part{
+                width: 50%;
+
+                    div.text{
+                        width: 80%;
+
+                        h1{
+                            font-size: 3rem;
+                        }
+
+                        p{
+                            font-size: 1.4rem;
+                            padding: 2rem 0;
+                        }
+                    }
+                }
+                div.image-part{
+                    width: 50%;
+                    img{
+                        width: 100%;
+                    }
+                }
             }
         }
     }
