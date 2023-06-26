@@ -397,6 +397,7 @@ export default {
 
         div.testimonials{
             padding-top: 6rem;
+            padding-bottom: 8rem;
             @include flex(row, normal, normal);
             div.image-part{
                 width: 50%;
