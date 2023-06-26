@@ -62,6 +62,8 @@ export default {
     div.icons-right{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+        overflow: hidden;
+
         height: 80px;
         width: 80px;
         border-radius: .5rem;
@@ -81,6 +83,7 @@ export default {
         p{
             font-size: .8rem;
         }
+
     }
 
     div.icons-right-bottom{
@@ -130,6 +133,12 @@ export default {
             color: white;
         }
     }
+
+    div.icon-bottom:hover{
+        transform: scale(1.1);
+        transition: 0.2s ease;
+    }
+
     div.jumbo{
         margin-top: 99px;
         width: 100%;
@@ -148,6 +157,14 @@ export default {
 
                 button.jumbo-button{
                     border: 2px solid black;
+                }
+
+                button.jumbo-button:hover{
+                    border: 2px solid white;
+                    background: none;
+                    color: white;
+
+                    transition: 0.2s ease;
                 }
 
                 h1{

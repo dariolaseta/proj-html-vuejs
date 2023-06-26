@@ -45,11 +45,23 @@ button{
 .light-orange{
     background-color: #ffefe6;
     color: #f55e10;
+    
+}
+
+button.light-orange:hover{
+    background-color: #f55e10;
+    color: white;
+    transition: 0.2s ease;
 }
 
 .orange{
     background-color: #f55e10;
     color: white;
+}
+
+button.orange:hover{
+    background-color: #da5107;
+    transition: 0.2s ease;
 }
 
 .form-container{
