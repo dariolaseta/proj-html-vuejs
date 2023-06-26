@@ -88,10 +88,54 @@
                     <img src="../assets/img/we-boost-our-clients.jpg" alt="We boost our clients">
                 </div>
             </div>
-            
-        </div>
 
-        
+            <div class="middle-section">
+                <div class="text-part left">
+                    <div class="top">
+                        <h2>We Build Relationships</h2>
+                        <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>
+                    </div>
+                    
+                    <div class="bottom">
+                        <h2>Proprietary Processes</h2>
+                        <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>
+                    </div>
+                </div>
+
+                <div class="text-part right">
+                    <div class="accountability flex">
+                        <div class="box">
+                            <!-- fontawesome -->
+                        </div>
+                        <div class="text">
+                            <h2>Accountability</h2>
+                            <p>Curabitur ac leo nunc vestibulum</p>
+                        </div>
+                    </div>
+
+                    <div class="transparency flex">
+                        <div class="box">
+                            <!-- fontawesome -->
+                        </div>
+                        <div class="text">
+                            <h2>Transparency</h2>
+                            <p>Curabitur ac leo nunc vestibulum</p>
+                        </div>
+                    </div>
+
+                    <div class="investment flex">
+                        <div class="box">
+                            <!-- fontawesome -->
+                        </div>
+                        <div class="text">
+                            <h2>Investment</h2>
+                            <p>Curabitur ac leo nunc vestibulum</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -215,8 +259,10 @@ export default {
         // aggiungere linear gradient
         margin-top: 7rem;
         div.container{
+            
             div.top-section{
                 @include flex(row, normal, normal);
+                padding-bottom: 2rem;
 
                 div.text-part{
                 width: 50%;
@@ -238,6 +284,48 @@ export default {
                     width: 50%;
                     img{
                         width: 100%;
+                        border-radius: .5rem;
+                    }
+                }
+            }
+
+            div.middle-section{
+                @include flex(row, normal, normal);
+
+                padding: 5rem 0;
+                div.left{
+                    width: 50%;
+
+                    h2{
+                        font-size: 2rem;
+                        padding-bottom: 1rem;
+                    }
+
+                    p{
+                        font-size: 1.2rem;
+                        padding-bottom: 4rem;
+                        width: 80%;
+                    }
+                }
+
+                div.right{
+                    padding-left: 3rem;
+                    div.flex{
+                        @include flex(row, normal, normal);
+                    }
+
+                    div.box{
+                        width: 70px;
+                        height: 70px;
+                        background-color: orange;
+                        border-radius: 1rem;
+                    }
+
+                    div.text{
+                        padding-left: 1rem;
+                        p{
+                            padding: 1rem 0 2rem;
+                        }
                     }
                 }
             }
