@@ -270,6 +270,12 @@ export default {
                 width: 90%;
             }
 
+            p:hover{
+                color: #f55e10;
+                cursor: pointer;
+                transition: 0.5s ease;
+            }
+
             p.top-text{
                 padding: 1rem 0 2rem;
                 font-size: 1.8rem;

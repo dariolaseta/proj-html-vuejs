@@ -67,6 +67,12 @@ export default {
                         font-size: 2rem;
                         padding-top: 1rem;
                     }
+
+                    h2:hover{
+                        color: #f55e10;
+                        cursor: pointer;
+                        transition: 0.5s ease;
+                    }
                 }
             }
         }

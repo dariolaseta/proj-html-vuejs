@@ -115,6 +115,11 @@ button.orange:hover{
             border-radius: .6rem;
         }
 
+        input:hover{
+            border: 1px solid #f55e10;
+            transition: 0.4s ease;
+        }
+
         button.orange{
             margin-bottom: 1rem;
         }

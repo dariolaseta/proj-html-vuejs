@@ -9,10 +9,10 @@
                 <ul>
                     <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">Why Us <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">Case Studies <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">About <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Why Us</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </div>
     

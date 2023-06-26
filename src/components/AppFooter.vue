@@ -202,6 +202,16 @@ export default {
                             padding: .6rem 0;
                         }
                     }
+
+                    ul{
+                        li{
+                            a:hover{
+                                border-right: 2px solid #f55e10;
+                                color: #f55e10;
+                                transition: 0.5s ease;
+                            }
+                        }
+                    }
                 }
 
                 div.socials{
