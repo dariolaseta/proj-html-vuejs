@@ -18,6 +18,14 @@ li{
 }
 
 .container{
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+button{
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
 }
