@@ -135,6 +135,34 @@
                     </div>
                 </div>
             </div>
+
+            <div class="awards">
+                <div class="title">
+                    <h2>Awards</h2>
+                </div>
+
+                <div class="logos">
+                    <div class="imgs">
+                        <img src="../assets/img/award-a.png" alt="Winner Seo Master">
+                        <p>Winner Seo Master MAGT Smart Start Award 2017</p>
+                    </div>
+
+                    <div class="imgs">
+                        <img src="../assets/img/award-b.png" alt="Top Social Media Agencies">
+                        <p>Top Social Media Agencies Next Partner 2018</p>
+                    </div>
+
+                    <div class="imgs">
+                        <img src="../assets/img/award-c.png" alt="Fastest Growing Abstract Solution Providers">
+                        <p>10 Fastest Growing Abstract Solution Providers 2019</p>
+                    </div>
+
+                    <div class="imgs">
+                        <img src="../assets/img/award-d.png" alt="National Excellence Agencie Award Winner">
+                        <p>National Excellence Agencie Award Winner 2020</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -329,6 +357,28 @@ export default {
                     }
                 }
             }
+
+            div.awards{
+                    div.title{
+                        text-align: center;
+                        font-size: 1.3rem;
+                    }
+
+                    div.logos{
+                        @include flex(row, normal, normal);
+                        width: 100%;
+                        div.imgs{
+                            width: 100%;
+                            img{
+                                width: 50%;
+                            }
+
+                            p{
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
         }
     }
 </style>
