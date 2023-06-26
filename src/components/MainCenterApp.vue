@@ -2,11 +2,20 @@
     <section class="increase-brand">
         <div class="container">
             <div class="image-part">
-                <img src="" alt="">
+                <img src="../assets/svg/img1.svg" alt="img 1">
             </div>
 
             <div class="text-part">
-                
+                <div class="business-growth">
+                    <p class="icon-container"></p>
+                    <span>Business Growth</span>
+                </div>
+
+                <div class="text">
+                    <h1>Increase Brand Awareness</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
+                    <button>Get A Consultation</button>
+                </div>
             </div>
         </div>
     </section>
@@ -24,9 +33,47 @@ export default {
 
     section.increase-brand{
         div.container{
-            background-color: purple;
-            height: 500px;
             width: 100%;
+            @include flex(row, normal, normal);
+
+            div.image-part{
+                width: 45%;
+                padding: 5rem 0;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            div.text-part{
+                width: 55%;
+                padding: 10rem;
+
+                div.business-growth{
+                    @include flex(row, normal, center);
+
+                    p.icon-container{
+                        background-color: #0064fe;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+
+                    span{
+                        font-size: 1.3rem;
+                        padding-left: 1rem;
+                    }
+                }
+
+                h1{
+                    font-size: 2.9rem;
+                }
+
+                p{
+                    font-size: 1.3rem;
+                    margin: 1rem 0;
+                }
+            }
         }
     }
 </style>
