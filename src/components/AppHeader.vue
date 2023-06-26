@@ -2,13 +2,13 @@
     <header>
         <div class="container">
             <div class="logo">
-                Logo
+                <a href="#">Logo</a>
             </div>
     
             <div class="middle-section">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="@">Services</a></li>
+                    <li><a href="#">Services</a></li>
                     <li><a href="#">Why Us</a></li>
                     <li><a href="#">Case Studies</a></li>
                     <li><a href="#">About</a></li>
@@ -54,10 +54,10 @@ export default {
 
             div.right-section{
                 ul{
-                    @include flex(row, normal, normal);
-
+                    @include flex(row, normal, center);
+                    
                     li{
-                        margin-right: 1rem;
+                        margin-right: 2rem;
                     }
                 }
             }
