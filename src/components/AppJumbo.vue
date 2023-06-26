@@ -33,6 +33,19 @@
                 </div>
             </div>
         </div>
+
+        <div class="icons-right">
+            <a href="#"><i class="fa-solid fa-folder-closed"></i></a>
+            <p>Prebuilts</p>
+        </div>
+        <div class="icons-right-bottom">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <p>Buy now</p>
+        </div>
+
+        <div class="icon-bottom">
+            <a href="#"><i class="fa-solid fa-message"></i></a>
+        </div>
     </main>
 </template>
 
@@ -45,6 +58,78 @@ export default {
 <style scoped lang="scss">
     @use "../styles/partials/_mixins" as *;
     @use "../styles/partials/_variables" as *;
+
+    div.icons-right{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        height: 80px;
+        width: 80px;
+        border-radius: .5rem;
+        position: fixed;
+        z-index: 1;
+        right: 15px;
+        top: 150px;
+
+        cursor: pointer;
+
+        @include flex(column, center, center);
+
+        font-size: 2rem;
+
+        background-color: white;
+
+        p{
+            font-size: .8rem;
+        }
+    }
+
+    div.icons-right-bottom{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        cursor: pointer;
+
+        height: 80px;
+        width: 80px;
+        border-radius: .5rem;
+        position: fixed;
+        z-index: 1;
+        right: 15px;
+        top: 250px;
+
+        @include flex(column, center, center);
+
+        font-size: 2rem;
+
+        background-color: white;
+
+        p{
+            font-size: .8rem;
+        }
+    }
+
+    div.icon-bottom{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        cursor: pointer;
+
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 1;
+        right: 15px;
+        bottom: 30px;
+
+        @include flex(column, center, center);
+
+        font-size: 2rem;
+
+        background-color: #f55e10;
+
+        i{
+            color: white;
+        }
+    }
     div.jumbo{
         margin-top: 99px;
         width: 100%;
@@ -83,6 +168,8 @@ export default {
             div.form-container{
                 margin: 3rem;
             }
+
+            
         }
     }
 </style>
