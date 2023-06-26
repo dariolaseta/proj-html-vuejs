@@ -374,6 +374,16 @@ export default {
                         }
                     }
 
+                    div.box:hover i{
+                        display: none;
+                        transition: 0.4s ease;
+                    }
+
+                    div.text:hover h2{
+                        color: #f55e10;
+                        transition: 0.4s ease;
+                    }
+
                     div.text{
                         padding-left: 1rem;
                         p{
