@@ -45,6 +45,7 @@ export default {
 <style scoped lang="scss">
     @use "../styles/partials/_mixins" as *;
     @use "../styles/partials/_variables" as *;
+    
     div.jumbo{
         width: 100%;
         background-image: url("../assets/img/marketing-intro.jpg");
