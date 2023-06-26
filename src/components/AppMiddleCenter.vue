@@ -163,6 +163,19 @@
                     </div>
                 </div>
             </div>
+
+            <div class="testimonials">
+                <div class="image-part">
+                    <img src="../assets/img/large-testimonial.jpg" alt="testimonial">
+                </div>
+
+                <div class="text-part">
+                    <h2>“The team at Avada Marketing Consultant is fabulous. They helped us unlock our potential online and offline. We have experienced year on year growth due to their progressive approach.”</h2>
+
+                    <p>Kate Schadler</p>
+                    <p class="subtext">Marketing Consultant – Abstract</p>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -359,6 +372,7 @@ export default {
             }
 
             div.awards{
+                margin-bottom: 6rem;
                     div.title{
                         text-align: center;
                         font-size: 1.3rem;
@@ -379,6 +393,37 @@ export default {
                         }
                     }
                 }
+        }
+
+        div.testimonials{
+            padding-top: 6rem;
+            @include flex(row, normal, normal);
+            div.image-part{
+                width: 50%;
+                img{
+                    width: 100%;
+                    border-radius: 0.5rem;
+                }
+            }
+
+            div.text-part{
+                width: 50%;
+                h2{
+                    width: 60%;
+                    font-size: 1.8rem;
+                    margin: 3rem 5rem 2rem;
+                }
+                p{
+                    margin-left: 5rem;
+                    margin-bottom: .5rem;
+                    font-size: 1.3rem;
+                }
+
+                p.subtext{
+                    font-size: .8rem;
+                }
+            }
+
         }
     }
 </style>
