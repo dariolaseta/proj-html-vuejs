@@ -40,6 +40,27 @@
             </div>
         </div>
     </section>
+
+    <section class="social-media-analysis">
+        <div class="container">
+            <div class="image-part">
+                <img src="../assets/svg/img3.svg" alt="social media analysis img">
+            </div>
+
+            <div class="text-part">
+                <div class="social-anlys">
+                    <p class="icon-container green"></p>
+                    <span>Social Media Analysis</span>
+                </div>
+
+                <div class="text">
+                    <h1>Harness Your Social Proof</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
+                    <button>Get A Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
@@ -116,6 +137,34 @@ export default {
                     font-size: 1.3rem;
                     margin: 1rem 0;
                 }
-            }
+        }
+    }
+
+    section.social-media-analysis{
+        div.container{
+            @include flex(row, normal, normal);
+        }
+
+        div.text-part{
+                width: 55%;
+                padding: 5rem 0;
+                div.social-anlys{
+                    @include flex(row, normal, center);
+
+                    span{
+                        font-size: 1.3rem;
+                        padding-left: 1rem;
+                    }
+                }
+
+                h1{
+                    font-size: 2.9rem;
+                }
+
+                p{
+                    font-size: 1.3rem;
+                    margin: 1rem 0;
+                }
+        }
     }
 </style>
