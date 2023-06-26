@@ -17,7 +17,7 @@
                         <div class="text">
                             <h2>Richard Madsen</h2>
                             <h2>Marketing Consultant Expert</h2>
-                            <p><a href="#">(555) 802-1234</a></p>
+                            <p><a href="#" class="phone-number">(555) 802-1234</a></p>
                         </div>
 
                         <div class="form">
@@ -52,19 +52,16 @@ export default {
         background-size: cover;
         background-repeat: no-repeat;
         div.container{
-            background-color: blue;
             width: 100%;
-            height: 500px;
+            height: 740px;
             color: white;
 
             @include flex(row, normal, center);
 
             div.big-part{
                 width: 60%;
-                background-color: green;
 
                 button.jumbo-button{
-                    background-color: white;
                     border: 2px solid black;
                 }
 
@@ -81,34 +78,6 @@ export default {
             div.small-part{
                 height: 100%;
                 width: 40%;
-                background-color: pink;
-
-                div.form-container{
-                    @include flex(column, normal, center);
-                    width: 100%;
-
-                    div.img{
-                        padding: 1rem 0;
-                        
-                        img{
-                            height: 100px;
-                            width: 100px;
-                            border-radius: 50%;
-                        }
-                    }
-
-                    div.text{
-                        text-align: center;
-
-                        h2{
-                            padding-bottom: 1rem;
-                        }
-                    }
-
-                    div.form{
-                        @include flex(column, normal, normal);
-                    }
-                }
             }
         }
     }
