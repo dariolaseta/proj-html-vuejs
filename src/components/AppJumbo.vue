@@ -53,7 +53,7 @@ export default {
         background-repeat: no-repeat;
         div.container{
             width: 100%;
-            height: 740px;
+            height: 660px;
             color: white;
 
             @include flex(row, normal, center);
@@ -78,6 +78,10 @@ export default {
             div.small-part{
                 height: 100%;
                 width: 40%;
+            }
+
+            div.form-container{
+                margin: 3rem;
             }
         }
     }
