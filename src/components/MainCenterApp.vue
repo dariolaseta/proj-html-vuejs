@@ -14,7 +14,7 @@
                 <div class="text">
                     <h1>Increase Brand Awareness</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
-                    <button>Get A Consultation</button>
+                    <button class="orange">Get A Consultation</button>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
                 <div class="text">
                     <h1>In-House Sales Training</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
-                    <button>Get A Consultation</button>
+                    <button class="orange">Get A Consultation</button>
                 </div>
             </div>
             
@@ -56,7 +56,7 @@
                 <div class="text">
                     <h1>Harness Your Social Proof</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
-                    <button>Get A Consultation</button>
+                    <button class="orange">Get A Consultation</button>
                 </div>
             </div>
         </div>

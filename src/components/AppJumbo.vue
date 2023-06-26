@@ -25,7 +25,7 @@
                             <input type="text" placeholder="Your Email*">
                             <input type="text" placeholder="Your Phone Number*">
 
-                            <button class="form">Get A Callback</button>
+                            <button class="form orange">Get A Callback</button>
 
                             <p>By submitting my data I agree to be contacted</p>
                         </div>
@@ -45,7 +45,7 @@ export default {
 <style scoped lang="scss">
     @use "../styles/partials/_mixins" as *;
     @use "../styles/partials/_variables" as *;
-    
+
     div.jumbo{
         width: 100%;
         background-image: url("../assets/img/marketing-intro.jpg");
