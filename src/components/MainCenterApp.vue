@@ -7,7 +7,7 @@
 
             <div class="text-part">
                 <div class="business-growth">
-                    <p class="icon-container"></p>
+                    <p class="icon-container blue"></p>
                     <span>Business Growth</span>
                 </div>
 
@@ -16,6 +16,27 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
                     <button>Get A Consultation</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="investors">
+        <div class="container">
+            <div class="text-part">
+                <div class="investor-in-people">
+                    <p class="icon-container yellow"></p>
+                    <span>Investors In People</span>
+                </div>
+
+                <div class="text">
+                    <h1>In-House Sales Training</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor placerat luctus. Nullam sit amet ante sed orci convallis gravida et at massa.</p>
+                    <button>Get A Consultation</button>
+                </div>
+            </div>
+            
+            <div class="image-part">
+                <img src="../assets/svg/img2.svg" alt="investors in people img">
             </div>
         </div>
     </section>
@@ -52,13 +73,6 @@ export default {
                 div.business-growth{
                     @include flex(row, normal, center);
 
-                    p.icon-container{
-                        background-color: #0064fe;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                    }
-
                     span{
                         font-size: 1.3rem;
                         padding-left: 1rem;
@@ -75,5 +89,33 @@ export default {
                 }
             }
         }
+    }
+
+    section.investors{
+        div.container{
+            @include flex(row, normal, normal);
+        }
+
+        div.text-part{
+                width: 55%;
+                padding: 5rem 0;
+                div.investor-in-people{
+                    @include flex(row, normal, center);
+
+                    span{
+                        font-size: 1.3rem;
+                        padding-left: 1rem;
+                    }
+                }
+
+                h1{
+                    font-size: 2.9rem;
+                }
+
+                p{
+                    font-size: 1.3rem;
+                    margin: 1rem 0;
+                }
+            }
     }
 </style>
