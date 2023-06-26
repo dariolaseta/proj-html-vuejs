@@ -7,19 +7,18 @@
     
             <div class="middle-section">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Why Us</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Why Us <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Case Studies <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">About <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a></li>
                 </ul>
             </div>
     
             <div class="right-section">
                 <ul>
-                    <li><i class="fa-solid fa-phone"></i></li>
-                    <li>(555) 802-1234</li>
+                    <li><i class="fa-solid fa-phone"></i> (555) 802-1234</li>
                     <li><a href="#"><button class="light-orange">Free Quote</button></a></li>
                 </ul>
             </div>
@@ -38,7 +37,12 @@ export default {
     @use "../styles/partials/_variables" as *;
 
     header{
-        i{
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        i.fa-phone{
             color: #f55e10;
         }
         div.container{

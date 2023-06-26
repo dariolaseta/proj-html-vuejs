@@ -22,7 +22,7 @@
                             <div class="text">
                                 <h2>Richard Madsen</h2>
                                 <p>Marketing Consultant Expert</p>
-                                <p><a href="#" class="phone-number">(555) 802-1234</a></p>
+                                <p><a href="#" class="phone-number">  <i class="fa-solid fa-phone"></i>  (555) 802-1234</a></p>
                             </div>
     
                             <div class="form">
@@ -51,7 +51,17 @@
                         </div>
 
                         <div class="icons">
-
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                         </div>
                     </div>
 
@@ -174,6 +184,12 @@ export default {
             div.content{
                 @include flex(row, normal, normal);
                 width: 100%;
+
+                div.icons{
+                    width: 30%;
+                    margin-top: 2rem;
+                    @include flex(row, space-between, normal);
+                }
 
                 div.links{
                     width: 55%;

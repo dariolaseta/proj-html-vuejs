@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="right-button">
-                    <button class="light-orange">(555) 802-1234</button>
+                    <button class="light-orange"> <i class="fa-solid fa-phone"></i> (555) 802-1234</button>
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@
                 <div class="text-part right">
                     <div class="accountability flex">
                         <div class="box">
-                            <!-- fontawesome -->
+                            <i class="fa-solid fa-receipt"></i>
                         </div>
                         <div class="text">
                             <h2>Accountability</h2>
@@ -115,7 +115,7 @@
 
                     <div class="transparency flex">
                         <div class="box">
-                            <!-- fontawesome -->
+                            <i class="fa-solid fa-calendar-plus"></i>
                         </div>
                         <div class="text">
                             <h2>Transparency</h2>
@@ -125,7 +125,7 @@
 
                     <div class="investment flex">
                         <div class="box">
-                            <!-- fontawesome -->
+                            <i class="fa-solid fa-signal"></i>
                         </div>
                         <div class="text">
                             <h2>Investment</h2>
@@ -358,8 +358,14 @@ export default {
                     div.box{
                         width: 70px;
                         height: 70px;
-                        background-color: orange;
+                        border: 2px solid #f55e10;
                         border-radius: 1rem;
+                        @include flex(row, center, center);
+
+                        i{
+                            font-size: 2rem;
+                            color: #f55e10;
+                        }
                     }
 
                     div.text{

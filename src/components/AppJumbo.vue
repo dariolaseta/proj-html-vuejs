@@ -5,7 +5,7 @@
                 <div class="big-part">
                     <h1>Unlock Your Online Growth Potential</h1>
                     <p>Online marketing to secure customer retention, leads, and sales. We focus on the bigger picture.</p>
-                    <button class="jumbo-button">Our Services &rarr;</button>
+                    <button class="jumbo-button">Our Services <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
 
                 <div class="small-part">
@@ -17,7 +17,7 @@
                         <div class="text">
                             <h2>Richard Madsen</h2>
                             <h2>Marketing Consultant Expert</h2>
-                            <p><a href="#" class="phone-number">(555) 802-1234</a></p>
+                            <p><a href="#" class="phone-number"> <i class="fa-solid fa-phone"></i> (555) 802-1234</a></p>
                         </div>
 
                         <div class="form">
@@ -45,8 +45,8 @@ export default {
 <style scoped lang="scss">
     @use "../styles/partials/_mixins" as *;
     @use "../styles/partials/_variables" as *;
-
     div.jumbo{
+        margin-top: 99px;
         width: 100%;
         background-image: url("../assets/img/marketing-intro.jpg");
         background-size: cover;
