@@ -1,5 +1,5 @@
 <template>
-  <AppHeader />
+  <AppHeader :navItems="navItems" />
   <AppMain />
   <AppFooter />
 </template>
@@ -15,6 +15,18 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
+  },
+  data(){
+    return{
+      navItems:[
+        {title: "Home"},
+        {title: "Services"},
+        {title: "Why Us"},
+        {title: "Case Studies"},
+        {title: "About"},
+        {title: "Blog"},
+      ]
+    }
   }
 }
 </script>

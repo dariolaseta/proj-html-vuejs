@@ -7,12 +7,7 @@
     
             <div class="middle-section">
                 <ul>
-                    <li><a href="#" class="active">Home <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">Why Us</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li v-for="element in navItems"><a href="#" class="active">{{element.title}}</a></li>
                 </ul>
             </div>
     
@@ -28,7 +23,12 @@
 
 <script>
 export default {
-    name: "AppHeader"
+    name: "AppHeader",
+    props:{
+        navItems: {
+            type: Array
+        }
+    }
 }
 </script>
 
@@ -62,12 +62,6 @@ export default {
                         a:hover{
                             color: #f55e10;
                             transition: 0.3s ease;
-                            border-bottom: 3px solid #f55e10;
-                            padding-bottom: .5rem;
-                        }
-
-                        a.active{
-                            color: #f55e10;
                             border-bottom: 3px solid #f55e10;
                             padding-bottom: .5rem;
                         }
