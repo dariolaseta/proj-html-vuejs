@@ -7,7 +7,7 @@
     
             <div class="middle-section">
                 <ul>
-                    <li><a href="#">Home <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="#" class="active">Home <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="#">Services <i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="#">Why Us</a></li>
                     <li><a href="#">Case Studies</a></li>
@@ -57,6 +57,21 @@ export default {
                 width: 40%;
                 ul{
                     @include flex(row, space-between, center);
+
+                    li{
+                        a:hover{
+                            color: #f55e10;
+                            transition: 0.3s ease;
+                            border-bottom: 3px solid #f55e10;
+                            padding-bottom: .5rem;
+                        }
+
+                        a.active{
+                            color: #f55e10;
+                            border-bottom: 3px solid #f55e10;
+                            padding-bottom: .5rem;
+                        }
+                    }
                 }
             }
 
