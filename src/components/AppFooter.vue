@@ -70,31 +70,21 @@
                         <div class="services">
                             <ul>
                                 <h3>Services</h3>
-                                <li><a href="#">Marketing Plan</a></li>
-                                <li><a href="#">Sales Development</a></li>
-                                <li><a href="#">Digital Marketing</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Why Us</a></li>
-                                <li><a href="#">Case Studies</a></li>
+                                <li v-for="element in footerItemsServices"><a href="#">{{ element.title }}</a></li>
                             </ul>
                         </div>
     
                         <div class="resources">
                             <ul>
                                 <h3>Resources</h3>
-                                <li><a href="#">Learning Center</a></li>
-                                <li><a href="#">Video Tutorials</a></li>
-                                <li><a href="#">Customers</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li v-for="element in footerItemsResources"><a href="#">{{ element.title }}</a></li>
                             </ul>
                         </div>
     
                         <div class="company">
                             <ul>
                                 <h3>Company</h3>
-                                <li><a href="#">Who We Are</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li v-for="element in footerItemsCompany"><a href="#">{{ element.title }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -120,7 +110,18 @@
 
 <script>
 export default {
-    name: "AppFooter"
+    name: "AppFooter",
+    props:{
+        footerItemsServices: {
+            type: Array
+        },
+        footerItemsResources: {
+            type: Array
+        },
+        footerItemsCompany: {
+            type: Array
+        }
+    }
 }
 </script>
 
